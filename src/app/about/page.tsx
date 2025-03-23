@@ -5,37 +5,37 @@ export default function About() {
     {
       year: "March 2024",
       title: "The Idea",
-      description: "It all started with a simple idea in a garage. We noticed how many perfectly good computers were being discarded while many in our community lacked access to technology. This sparked the mission that would become Computers for Cause.",
+      description: "It all started with a simple idea. We noticed how many perfectly good computers were being discarded while many in our community lacked access to technology. This sparked the mission that would become Computers for Cause.",
       imagePath: "/timeline1.jpg",
       imageAlt: "Starting in the garage",
       isImageLeft: true
     },
     {
       year: "July 2024",
-      title: "Generous Donation",
-      description: "We were able to get in contact with a company called Sycamore International. We received a generous donation of 30 chromebooks and chargers. These laptops were refurbished and donated to local homeless shelters.",
+      title: "First Major Partnership",
+      description: "Our outreach to tech companies led to our first major partnership with Sycamore International, who generously donated 30 Chromebooks and chargers. This donation became the foundation of our mission to bridge the digital divide.",
       imagePath: "/timeline2.jpg",
-      imageAlt: "First Donation",
+      imageAlt: "First donation drive",
       isImageLeft: false
     },
     {
-      year: "2023",
-      title: "Partnership with Schools",
-      description: "We established partnerships with local schools to identify students who needed computers for remote learning. This collaboration helped us create a sustainable distribution system and ensure computers reached those who needed them most.",
+      year: "October 2024",
+      title: "Expanding Our Impact",
+      description: "We began reaching out to homeless shelters and underfunded organizations. Our partnership with Good Shepherd Alliance, led by Nancy Jacob, marked a significant milestone. We successfully installed a computer lab with 8 laptops, internet access, and proper furniture, impacting over 35 residents.",
       imagePath: "/timeline3.jpg",
-      imageAlt: "School partnership meeting",
+      imageAlt: "Computer lab installation",
       isImageLeft: true
     },
     {
-      year: "2023",
-      title: "Expanding Our Impact",
-      description: "As word spread, our volunteer base grew. We began offering basic computer literacy classes alongside our computer donations, helping recipients make the most of their new technology. The community response was overwhelming.",
+      year: "December 2024",
+      title: "Growing Community Support",
+      description: "Our mission gained recognition through the district newsletter and caught the attention of local representatives, including Ashburn District Supervisor Michael R. Turner. We also connected with Debra Rapone from Fauquier County Shelter, expanding our reach to new communities.",
       imagePath: "/timeline4.jpg",
-      imageAlt: "Computer literacy class",
+      imageAlt: "Community outreach",
       isImageLeft: false
     },
     {
-      year: "2024",
+      year: "2025 and beyond",
       title: "Looking Forward",
       description: "Today, we're working on expanding our reach beyond our local community. With new partnerships forming and our volunteer base growing, we're excited to help bridge the digital divide for even more people in need.",
       imagePath: "/timeline5.jpg",
@@ -59,7 +59,7 @@ export default function About() {
             <div key={index} className={`flex flex-col ${event.isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-16`}>
               {/* Image Section */}
               <div className="w-full md:w-1/2">
-                <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-xl">
+                <div className="relative w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
                   <Image
                     src={event.imagePath}
                     alt={event.imageAlt}
@@ -67,6 +67,7 @@ export default function About() {
                     style={{ objectFit: 'cover' }}
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={index === 0}
+                    className="rounded-lg"
                   />
                 </div>
               </div>
