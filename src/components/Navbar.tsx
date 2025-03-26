@@ -16,8 +16,8 @@ export default function Navbar() {
             <span className="text-white text-xl font-bold font">Computers for Cause</span>
           </Link>
           <div className="flex space-x-4">
-            <Link href="/about" className="bg-black text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transform hover:scale-105 transition-transform duration-300">About</Link>
-            <Link href="/contact" className="bg-black text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transform hover:scale-105 transition-transform duration-300">Contact</Link>
+            <Link href="/about" className="bg-black font-bold text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transform hover:scale-105 transition-transform duration-300">About</Link>
+            <Link href="/contact" className="bg-black font-bold text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transform hover:scale-105 transition-transform duration-300">Contact</Link>
           </div>
         </div>
       </nav>
